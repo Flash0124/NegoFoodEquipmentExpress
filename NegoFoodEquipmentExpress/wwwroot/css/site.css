@@ -1,0 +1,127 @@
+/* Default font size */
+html {
+    font-size: 14px;
+}
+
+/* Font size for larger screens */
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* Focus effects for buttons and form elements */
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+/* Main layout */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.navbar {
+    padding-left: 100px; /* Adjust this value as needed */
+}
+
+/* for logo positioning */
+.navbar-brand {
+    position: absolute;
+    top: 0;
+    left: 70px;
+    padding: 10px;
+    transform: translateX(-50%);
+    z-index: 1; /* Ensure the logo is above other content */
+}
+
+body {
+    margin-bottom: 60px; /* Margin to accommodate fixed footer */
+    background-image: url('../images/bgimage1.jpg'); /* Set the background image path */
+    background-size: cover; /* Cover the entire background */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    background-color: #f8f9fa
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Privacy policy section */
+.privacy-policy {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+    .privacy-policy h2 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .privacy-policy p {
+        color: #666;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+/* About us section */
+.about-us {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+    .about-us p:first-child {
+        margin-top: 0;
+    }
+
+    .about-us p:last-child {
+        margin-bottom: 0;
+    }
+
+.carousel {
+    border: 2px solid #000000; /* Set the border style, width, and color */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    overflow: hidden; /* Hide any overflowing content */
+    max-width: 100%; /* Set the maximum width of the carousel */
+    margin-left: 10px; /* Left margin of the carousel horizontally */
+    margin-top: 30px;
+}
+
+.carousel-item img {
+    height: 350px; /* Set the height of the carousel images */
+    object-fit: cover; /* Ensure images cover the entire carousel */
+}
+
+#carouselExampleIndicators {
+    margin-bottom: 60px;
+}
+
+.card-img-top {
+    height: 120px; /* Set the height of the images */
+    width: 120px;
+}
+
+.container {
+    max-width: auto; /* Set the maximum width of the container */
+    margin-top: 20px; /* Add margin to the top of the container */
+    margin-bottom: 20px; /* Add margin to the bottom of the container */
+}
+
