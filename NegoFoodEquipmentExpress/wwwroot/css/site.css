@@ -27,16 +27,20 @@ html {
 
 .navbar {
     padding-left: 100px; /* Adjust this value as needed */
+    position: fixed;
+    width: 100%;
+    z-index: 2; /* Ensure the navbar is above other content */
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent white color */
 }
 
-/* for logo positioning */
+/* logo positioning */
 .navbar-brand {
     position: absolute;
     top: 0;
     left: 70px;
     padding: 10px;
     transform: translateX(-50%);
-    z-index: 1; /* Ensure the logo is above other content */
+    z-index: 3; /* Ensure the logo is above other content */
 }
 
 body {
@@ -102,7 +106,7 @@ body {
     overflow: hidden; /* Hide any overflowing content */
     max-width: 100%; /* Set the maximum width of the carousel */
     margin-left: 10px; /* Left margin of the carousel horizontally */
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .carousel-item img {
@@ -121,7 +125,7 @@ body {
 
 .container {
     max-width: auto; /* Set the maximum width of the container */
-    margin-top: 20px; /* Add margin to the top of the container */
+    margin-top: 50px; /* Add margin to the top of the container */
     margin-bottom: 20px; /* Add margin to the bottom of the container */
 }
 
