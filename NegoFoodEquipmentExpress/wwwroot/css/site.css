@@ -93,7 +93,7 @@ body {
 }
 
     .about-us p:first-child {
-        margin-top: 0;
+        margin-top: auto;
     }
 
     .about-us p:last-child {
@@ -105,7 +105,7 @@ body {
     border-radius: 10px; /* Add border radius for rounded corners */
     overflow: hidden; /* Hide any overflowing content */
     max-width: 100%; /* Set the maximum width of the carousel */
-    margin-left: 10px; /* Left margin of the carousel horizontally */
+    margin-left: 0; /* Left margin of the carousel horizontally */
     margin-top: 50px;
 }
 
@@ -129,3 +129,37 @@ body {
     margin-bottom: 20px; /* Add margin to the bottom of the container */
 }
 
+.product-details {
+    background-color: lightgreen; /* Semi-transparent green background */
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+    right: 2px;
+    text-align: center;
+    color: black;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.product-image {
+    border: 2px solid transparent; /* Add a transparent border */
+    transition: transform 0.5s; /* Smooth transition for border color change */
+    height: 120px; /* Set the height of the images */
+    width: 120px;
+    object-fit: cover; /* Ensure the image covers the specified dimensions */
+}
+
+.product-image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image:hover {
+    border: 1px solid green; /* Add a green border when hovering */
+}
+
+.product-image-container:hover .product-details {
+    opacity: 70%;
+}

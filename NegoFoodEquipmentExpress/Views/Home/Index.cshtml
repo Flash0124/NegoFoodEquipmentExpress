@@ -15,31 +15,34 @@
                     }
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="carousel-control-prev-icon rounded-circle bg-dark" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="carousel-control-next-icon rounded-circle bg-dark" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
             <div class="row mt-4">
                 @foreach (var product in Model)
                 {
-                    <div class="col-md-4 mb-3">
-                        <img src="~/images/@product.ImagePath" class="d-block w-100" alt="@product.Name">
+                    <div class="col-md-4 mb-3 product-image-container">
+                        <img src="~/images/@product.ImagePath" class="d-block w-100 product-image" alt="@product.Name">
+                        <div class="product-details">
+                            <p>Price: PhP @product.Price</p>
+                        </div>
                     </div>
                 }
             </div>
         </div>
         <div class="col-md-6">
             <div class="container">
-                <div id="productDetails">
+                <div id="product-details">
                     @foreach (var product in Model)
                     {
                         <div class="row border-bottom pb-3 mb-3 product-description" style="display: none;">
                             <div class="col-md-12">
-                                <h2>@product.Name</h2>
+                                <h3>@product.Name</h3>
                                 <p>@product.Description</p>
                                 <p>Price: PhP @product.Price</p>
                             </div>
