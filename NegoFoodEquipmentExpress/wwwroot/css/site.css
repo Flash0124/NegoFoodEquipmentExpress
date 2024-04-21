@@ -50,9 +50,9 @@ html {
 
 body {
     color: black;
-    margin-bottom: 60px; /* Margin to accommodate fixed footer */
+    margin-bottom: 20px; /* Margin to accommodate fixed footer */
     background-image: url('../images/bgimage.jpg'); /* Set the background image path */
-    background-size: cover; /* Cover the entire background */
+    background-size: auto; /* Cover the entire background */
     background-repeat: no-repeat; /* Do not repeat the background image */
 }
 
@@ -111,7 +111,7 @@ body {
     overflow: hidden; /* Hide any overflowing content */
     max-width: 100%; /* Set the maximum width of the carousel */
     margin-left: 0; /* Left margin of the carousel horizontally */
-    margin-top: 50px;
+    margin-top: auto;
     padding: 2px;
 }
 
@@ -167,10 +167,30 @@ body {
 }
 
 .product-image:hover {
-    border: 1px solid black; /* Add a green border when hovering */
+    border: 1px solid red; /* Add a red border when hovering */
 }
 
 .product-image-container:hover .product-details {
     opacity: 100%;
     color: black;   
+}
+
+.facebook-icon {
+    color: white;
+}
+
+.twitter-icon {
+    color: white;
+}
+
+.instagram-icon {
+    color: white;
+}
+
+.whatsapp-icon {
+    color: white;
+}
+
+.email-icon {
+    color: white;
 }
