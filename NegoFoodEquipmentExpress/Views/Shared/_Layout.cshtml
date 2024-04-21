@@ -30,7 +30,7 @@
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="About"><i class="fa fa-info-circle"></i> About Us</a>
                         </li>
                         <li class="nav-item d-flex align-items-center">
-                            <a class="nav-link" asp-area="" asp-page="/RequestQuote"><i class="fa fa-file-text-o"></i> Request a Quote</a>
+                            <a class="nav-link" asp-area="" asp-page="/RequestQuote"><i class="fa fa-file-text"></i> Request a Quote</a>
                         </li>
                         <li class="nav-item d-flex align-items-center">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy"><i class="fa fa-lock"></i> Privacy</a>
@@ -50,9 +50,21 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2024 - Nego Food Equipment Express - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <div class="row">
+                <div class="col-md-6">
+                    &copy; 2024 - Nego Food Equipment Express - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="#" class="text-muted me-sm-4"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="text-muted me-sm-4"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="text-muted me-sm-4"><i class="fa fa-instagram"></i></a>
+                    <a href="#" class="text-muted me-sm-4"><i class="fa fa-whatsapp"></i></a>
+                    <a href="#" class="text-muted me-sm-4"><i class="fa fa-envelope"></i></a>
+                </div>
+            </div>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
