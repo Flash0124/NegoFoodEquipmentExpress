@@ -48,6 +48,17 @@ html {
     z-index: 3 /* Ensure the logo is above other content */
 }
 
+.title {
+    text-shadow: 4px 4px 8px #f9f9f9; /* Adds a shadow effect */
+    transition: text-shadow 0.4s ease; /* Smooth transition effect */
+    transition: color 0.3s
+}
+
+    .title:hover {
+        text-shadow: 4px 4px 6px red; /* Adjusted shadow on hover */
+        color: white
+    }
+
 body {
     color: black;
     margin-bottom: 20px; /* Margin to accommodate fixed footer */

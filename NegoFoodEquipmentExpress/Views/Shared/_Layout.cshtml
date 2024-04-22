@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/NegoFoodEquipmentExpress.styles.css" asp-append-version="true" />
-
 </head>
 <body>
     <header>
@@ -35,7 +34,6 @@
                         <li class="nav-item d-flex align-items-center">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy"><i class="fa fa-lock"></i> Privacy</a>
                         </li>
-
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>
@@ -47,12 +45,11 @@
     <div class="container">
         <main role="main" class="pb-3">
             <div class="text-center">
-                <h1>NEGO Food Equipment Express</h1>
+                <h1 class="title">NEGO Food Equipment Express</h1>
             </div>
             @RenderBody()
         </main>
     </div>
-
     <footer class="border-top footer text-muted">
         <div class="container">
             <div class="row">
@@ -66,11 +63,9 @@
                     <a href="#" class="text-muted me-sm-4"><i class="fa fa-whatsapp whatsapp-icon"></i></a>
                     <a href="#" class="text-muted me-sm-4"><i class="fa fa-envelope email-icon"></i></a>
                 </div>
-
             </div>
         </div>
     </footer>
-
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
