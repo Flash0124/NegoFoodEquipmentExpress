@@ -60,10 +60,9 @@ html {
     }
 
 body {
-    color: black;
-    margin-bottom: 20px; /* Margin to accommodate fixed footer */
+    margin-bottom: 10px; /* Margin to accommodate fixed footer */
     background-image: url('../images/bgimage.jpg'); /* Set the background image path */
-    background-size: auto; /* Cover the entire background */
+    background-size: cover; /* Cover the entire background */
     background-repeat: no-repeat; /* Do not repeat the background image */
 }
 
@@ -186,22 +185,41 @@ body {
     color: black;   
 }
 
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+    height: 30px;
+    width: 100%;
+    background-color: transparent; /* Set the background color of the footer */
+    text-align: center; /* Align the content in the center */
+    padding: 10px 0; /* Add padding to the top and bottom of the footer */
+}
+
+.footer-container {
+    height: 60px; /* Set the minimum height for the footer container */
+    padding: 10px 0; /* Add padding as needed */
+    background-color: transparent;
+    text-align: center;
+}
+
+
 .facebook-icon {
-    color: white;
+    color: black;
 }
 
 .twitter-icon {
-    color: white;
+    color: black;
 }
 
 .instagram-icon {
-    color: white;
+    color: black;
 }
 
 .whatsapp-icon {
-    color: white;
+    color: black;
 }
 
 .email-icon {
-    color: white;
+    color: black;
 }

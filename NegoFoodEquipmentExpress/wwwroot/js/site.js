@@ -18,3 +18,20 @@
         // This ensures that only the description of the current carousel item is displayed
     });
 });
+
+$(document).ready(function () {
+    // This function runs when the document (the web page) is fully loaded and ready
+    $(window).scroll(function () {
+        // This function runs every time the user scrolls the window
+        if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+            // If the sum of the current vertical scroll position and the window height
+            // is equal to the total height of the document, it means the user has scrolled
+            // to the bottom of the page
+            $("#footer").fadeIn(); // Show the footer by fading it in
+        } else {
+            // If the user has not scrolled to the bottom of the page
+            $("#footer").fadeOut(); // Hide the footer by fading it out
+        }
+    });
+});
+
