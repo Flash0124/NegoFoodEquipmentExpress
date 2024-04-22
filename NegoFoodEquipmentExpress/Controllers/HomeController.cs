@@ -35,6 +35,19 @@ namespace NegoFoodEquipmentExpress.Controllers
             return View();
         }
 
+        public IActionResult RequestQuote()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult RequestQuote(RequestQuoteViewModel model)
+        {
+            // Process the form submission (e.g., send an email, save to database)
+            // Redirect to a thank you page or return a view
+            return RedirectToAction("Index");
+        }
+
         public IActionResult Privacy()
         {
             return View();

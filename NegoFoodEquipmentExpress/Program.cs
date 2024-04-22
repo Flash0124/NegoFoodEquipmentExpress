@@ -44,6 +44,12 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+    name: "RequestQuote",
+    pattern: "/Home/RequestQuote",
+    defaults: new { controller = "Home", action = "RequestQuote" });
+
 app.MapRazorPages(); // Map Razor Pages
 
 app.Run();
