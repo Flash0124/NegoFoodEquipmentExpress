@@ -117,12 +117,11 @@ body {
 
 .carousel {
     border: 1px solid #000000; /* Set the border style, width, and color */
-    border-radius: 10px; /* Add border radius for rounded corners */
+    border-radius: 5px; /* Add border radius for rounded corners */
     overflow: hidden; /* Hide any overflowing content */
     max-width: 100%; /* Set the maximum width of the carousel */
     margin-left: 0; /* Left margin of the carousel horizontally */
     margin-top: auto;
-    padding: 2px;
 }
 
 .carousel-item img {
@@ -163,10 +162,10 @@ body {
     border: 2px solid transparent; /* Add a transparent border */
     border-radius: 10px;
     transition: transform 0.5s; /* Smooth transition for border color change */
-    height: 120px; /* Set the height of the images */
-    width: 120px;
+    height: 100px; /* Set the height of the images */
+    width: 100px;
     object-fit: cover; /* Ensure the image covers the specified dimensions */
-    padding: 10px;
+    padding: 2px;
 }
 
 .product-image-container {

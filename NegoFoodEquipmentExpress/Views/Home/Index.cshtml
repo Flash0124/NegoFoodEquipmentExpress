@@ -27,13 +27,14 @@
                 @foreach (var product in Model)
                 {
                     <div class="col-md-3 product-image-container">
-                        <img src="~/images/@product.ImagePath" class="d-block w-100 product-image" alt="@product.Name">
+                        <img src="~/images/@product.ImagePath" class="d-block w-100 product-image" alt="@product.Name" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <div class="product-details">
                             <p>Price: PhP @product.Price</p>
                         </div>
                     </div>
                 }
             </div>
+
         </div>
         <div class="col-md-6">
             <div class="container">

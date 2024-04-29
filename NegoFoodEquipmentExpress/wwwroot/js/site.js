@@ -35,3 +35,9 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function () {
+    $('.product-image').on('click', function () {
+        var index = $(this).parent().index();
+        $('#carouselExampleIndicators').carousel(index);
+    });
+});
