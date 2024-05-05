@@ -61,9 +61,10 @@ html {
 
 body {
     margin-bottom: 10px; /* Margin to accommodate fixed footer */
-    background-image: url('../images/bgimage.jpg'); /* Set the background image path */
+    background-image: url('../images/bgimagelogo.jpg'); /* Set the background image path */
     background-size: cover; /* Cover the entire background */
     background-repeat: no-repeat; /* Do not repeat the background image */
+    background-attachment: fixed; /* Keep the background fixed while scrolling */
 }
 
 .row {
@@ -171,8 +172,8 @@ body {
 .product-image-container {
     position: relative;
     overflow: hidden;
+    margin: 5px;
     margin-bottom: 5px;
-    border-radius: 10px;
 }
 
 .product-image:hover {
